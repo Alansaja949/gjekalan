@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "884123235960",
+    "project_id": "gojekaja-83cf3",
+    "storage_bucket": "gojekaja-83cf3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884123235960:android:4a3d4c883dce8ca2089f8d",
+        "android_client_info": {
+          "package_name": "com.example.gojekaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884123235960-64i6fquaat6gp8l9qf3sv4iesji9h6s9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gojekaja",
+            "certificate_hash": "7328a01f2844c4aa4eec29c49baab34737c05c40"
+          }
+        },
+        {
+          "client_id": "884123235960-kudltutralperhq5elcre8k522mim75p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6REVxRa9Me57INQXK6oGVQZgZjPS4Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884123235960-kudltutralperhq5elcre8k522mim75p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

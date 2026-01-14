@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toStartOf="@+id/btnProfile"
+                android:layout_marginEnd="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/gray_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@android:drawable/ic_menu_search"
+                        app:tint="@color/gray_700" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Cari layanan..."
+                        android:textColor="@color/gray_700"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/btnProfile"
+                android:layout_width="44dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logo_login"
+                android:background="@drawable/bg_button"
+                android:padding="4dp"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_login"
+                android:scaleType="centerCrop"
+                android:background="@color/gojek_green" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_activity"
+                    app:tint="@color/gojek_blue" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp0"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 coins"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginEnd="16dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/stat_sys_upload" app:tint="@color/gojek_blue" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bayar" android:textSize="10sp" android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginEnd="16dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_recent_history" app:tint="@color/gojek_blue" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Riwayat" android:textSize="10sp" android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_more" app:tint="@color/gojek_blue" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lainnya" android:textSize="10sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:paddingHorizontal="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/btnGoRide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_ride" android:background="@color/gojek_green_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoRide" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnGoCar"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_ride" android:background="@color/gojek_green_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoCar" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnGoFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_food" android:background="@color/gojek_red_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoFood" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnGoSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_ride" android:background="@color/gojek_green_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoSend" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuGoMart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_food" android:background="@color/gojek_red_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoMart" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuGoTagihan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_promo"
+                    android:background="@color/gojek_blue_light"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GoTagihan"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuGoTransit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_activity" android:background="@color/gojek_green_light" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GoTransit" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuLainnya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@android:drawable/ic_menu_more" android:background="@color/gray_100" android:padding="8dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lainnya" android:textSize="11sp" android:layout_marginTop="4dp" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

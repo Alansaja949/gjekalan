@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GojekAja" >
+        <activity
+            android:name=".bg_search_home"
+            android:exported="false" />
+        <activity
+            android:name=".ic_promo"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.DaftarduluActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.DaftarduluActivity"
+            android:exported="false" /> <!-- 1. Splash Screen (Halaman Pertama) -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 2. Halaman Mulai -->
+        <activity
+            android:name=".ui.GetStartedActivity"
+            android:exported="false" /> <!-- 3. Halaman Masuk & Daftar -->
+        <activity
+            android:name=".ui.auth.MasukActivity"
+            android:exported="false" /> <!-- 4. Halaman Utama (Beranda) -->
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false" /> <!-- 5. Halaman Profil (Ini yang Anda tanyakan) -->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" /> <!-- 6. Layanan Lainnya -->
+        <activity
+            android:name=".ui.ride.RideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.food.FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

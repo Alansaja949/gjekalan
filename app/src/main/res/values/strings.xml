@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GojekAja</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!-- WEB CLIENT ID YANG SUDAH DISINKRONKAN DENGAN SHA-1 BARU -->
+    <string name="default_web_client_id">884123235960-kudltutralperhq5elcre8k522mim75p.apps.googleusercontent.com</string>
+</resources>
